@@ -8,10 +8,12 @@ import sys
 
 # Complete the migratoryBirds function below.
 def migratoryBirds(arr):
-    count = [0]*6
+
+    lis = [0]*6
     for t in arr:
-        count[t] += 1
-    return(count.index(max(count)))
+        lis[t] += 1
+
+    return (lis.index(max(lis)))
         
     
 
